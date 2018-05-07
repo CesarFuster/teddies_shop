@@ -1,4 +1,6 @@
 class Teddy < ApplicationRecord
-  belongs_to :category
   monetize :price_cents
+
+  belongs_to :category
+  has_many :order_items
 end
