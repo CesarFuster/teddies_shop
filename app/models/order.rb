@@ -1,6 +1,5 @@
 class Order < ApplicationRecord
   monetize :amount_cents
-  monetize :price_cents
 
   belongs_to :user
   belongs_to :order_status

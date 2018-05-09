@@ -3,6 +3,7 @@ class TeddiesController < ApplicationController
 
   def index
     @teddies = Teddy.all
+    @order_item = current_order.order_items.new
   end
 
   def show
@@ -10,3 +11,4 @@ class TeddiesController < ApplicationController
   end
 
 end
+

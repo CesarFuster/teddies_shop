@@ -15,3 +15,14 @@
     <% end %>
   </div>
 </div>
+
+
+<h3 class="text-center">Teddies for Sale</h3>
+
+<div class="row">
+  <div class="col-xs-6 col-xs-offset-3">
+    <% @teddies.each do |teddy| %>
+      <%= render "teddy_row", teddy: teddy, order_item: @order_item %>
+    <% end %>
+  </div>
+</div>
